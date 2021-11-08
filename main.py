@@ -13,4 +13,11 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# 把训练集弄出来
+# 对于每一个uv  看哪些照片中能看到他 对于简单的图像可以看法向 如果钝角 那就看不见
+# 知道相机位姿 然后顶点和groundtruth连线就是方向
+
+
+
+
+

@@ -97,12 +97,18 @@ class NetFC(nn.Module):
 
     def forward(self, uvOut,posOut):
         """
-        前馈神经网络
-        :param x:位置，一个tensor
-        :param dire: 方向
-        :return: sigma: 体积强度，一个值
-                 radiance: tensor RGB
+
+        :param uvOut:
+        :param posOut:
+        :return:
         """
+        # """
+        # 前馈神经网络
+        # :param x:位置，一个tensor
+        # :param dire: 方向
+        # :return: sigma: 体积强度，一个值
+        #          radiance: tensor RGB
+        # """
         inputMatrix = torch.cat(uvOut,posOut)
         fc1_out = self.fc1(inputMatrix)
         fc2_out = self.fc2(fc1_out)
